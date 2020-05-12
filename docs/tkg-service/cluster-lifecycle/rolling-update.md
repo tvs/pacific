@@ -687,7 +687,7 @@ metadata:
 type: Opaque
 ```
 
-During control plane upgrade, there is a dance where the replacement `Machine`
+During control plane upgrade, there is a chance where the replacement `Machine`
 is brought up, and once it is healthy, the `OwnerReference` is updated to
 reference the new `Machine's` `KubeadmConfig`. There have previously been two
 scenarios where those `Secrets` were lost during the upgrade process because
